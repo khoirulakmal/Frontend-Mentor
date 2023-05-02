@@ -32,7 +32,6 @@ body{
 .arrow {
     display: flex;
     align-items:center;
-    justify-content: space-between;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -77,6 +76,10 @@ h2 {
     font-weight: 800;
     font-style: italic;
     padding: 10px;
+}
+
+p {
+    margin: 0 0 0 0;
 }
 
 #days, #months, #years{
