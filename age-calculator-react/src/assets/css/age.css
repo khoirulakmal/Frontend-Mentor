@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4%;
+}
+
+.age-section{
+    width: auto;
+    margin: 2%;
+    padding: 2%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 150px 20px;
+}
+
+.date {  
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    margin-right: 100px;
+  }
+
+.arrow {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+input{
+    width: 15vw;
+    font-size: x-large;
+    font-weight: 800;
+    color: hsl(0, 1%, 44%);
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 8vh;
+}
+
+input::placeholder {
+    font-size: x-large;
+    font-weight: 800;
+    color: hsl(0, 0%, 86%);
+}
+
+input:focus {
+    border: 3px solid #555;
+    background-color: transparent;
+    outline-offset: 0;
+}
+
+h1 {
+    display: inline;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: italic;
+    padding: 10px;
+}
+
+h2 {
+    background-color: red;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: italic;
+    padding: 10px;
+}
+
+#days, #months, #years{
+    color: hsl(259, 100%, 65%);
+}
+
+svg {
+    background-color: hsl(259, 100%, 65%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+hr {
+    width: 90%;
+    margin-right: 10px;
+}
+
+#submit-age {
+    display: none;
+}
+
+/* Define the CSS animation for number change */
+@keyframes countup {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  /* Apply the CSS animation to the elements with the "countup" class */
+  .countup {
+    animation: countup 1s ease-in-out;
+  }
+
+
+
+@media only screen and (max-width: 768px){
+    .date{
+        margin-right: 5px;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    input{
+        font-size: large;
+    }
+    
+    input::placeholder {
+        font-size: large;
+    }
+    .arrow {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        justify-content: center;
+    }
+    svg {
+        position: absolute;    
+    }
+    hr {
+        width: 100%;
+    }
+    
+}
