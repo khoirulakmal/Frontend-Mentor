@@ -86,6 +86,10 @@ p {
     color: hsl(259, 100%, 65%);
 }
 
+#formSubmit{
+    display: none;
+}
+
 svg {
     background-color: hsl(259, 100%, 65%);
     padding: 10px;
