@@ -62,6 +62,10 @@ input:focus {
     outline-offset: 0;
 }
 
+/* input[value='']:required{
+    border: 1px solid red;
+  } */
+
 h1 {
     display: inline;
     font-size: 32px;
